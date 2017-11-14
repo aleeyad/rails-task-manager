@@ -1,0 +1,7 @@
+<h2>Task Manager</h2>
+
+<h3>TASK: <%= @task [:name]%> STATUS: <%= @task[:status] %> </h3>
+<h4><%= link_to "Go back", tasks_path %></h4>
+<h4><%= link_to "Edit task", edit_task_path(@task) %></h4>
+<h4><%= link_to "Delete task", task_path(@task), method: :delete %></h4>
+
